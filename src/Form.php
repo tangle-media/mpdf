@@ -374,7 +374,7 @@ class Form
 	{
 		// SELECT
 		if ($this->mpdf->useActiveForms) {
-			$flags = [];
+			$flags = [self::FLAG_COMBOBOX];
 			if (!empty($objattr['disabled'])) {
 				$flags[] = self::FLAG_READONLY;
 				$flags[] = self::FLAG_NO_EXPORT;
